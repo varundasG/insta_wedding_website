@@ -7,17 +7,17 @@ const Home = () => {
   
   const slides = [
     {
-      image: '/WhatsApp Image 2025-07-11 at 11.51.05 PM.jpeg',
+      image: 'images/img2.jpg',
       title: 'Capturing Love Stories',
       subtitle: 'Your perfect wedding moments, beautifully preserved'
     },
     {
-      image: '/WhatsApp Image 2025-07-11 at 11.51.10 PM.jpeg',
+      image: 'images/img3.jpg',
       title: 'Cinematic Excellence',
       subtitle: 'Professional wedding videography that tells your story'
     },
     {
-      image: '/WhatsApp Image 2025-07-11 at 11.51.11 PM.jpeg',
+      image: 'images/img1.jpg',
       title: 'Pre-Wedding Magic',
       subtitle: 'Romantic pre-wedding shoots in stunning locations'
     }

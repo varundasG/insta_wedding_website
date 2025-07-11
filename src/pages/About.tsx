@@ -49,7 +49,7 @@ const About = () => {
             className="relative"
           >
             <img
-              src="/WhatsApp Image 2025-07-11 at 11.51.12 PM.jpeg"
+              src="images/img3.jpg"
               alt="Wedding photography setup"
               className="w-full h-96 object-cover rounded-2xl shadow-2xl"
             />

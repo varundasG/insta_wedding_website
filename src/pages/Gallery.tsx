@@ -11,27 +11,27 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: '/WhatsApp Image 2025-07-11 at 11.51.05 PM.jpeg',
+      src: 'images/img1.jpg',
       category: 'Traditional',
       title: 'Traditional Wedding Ceremony'
     },
     {
-      src: '/WhatsApp Image 2025-07-11 at 11.51.10 PM.jpeg',
+      src: 'images/img2.jpg',
       category: 'Pre-Wedding',
       title: 'Pre-Wedding Shoot'
     },
     {
-      src: '/WhatsApp Image 2025-07-11 at 11.51.11 PM.jpeg',
+      src: 'images/img3.jpg',
       category: 'Candid Moments',
       title: 'Candid Wedding Moments'
     },
     {
-      src: '/WhatsApp Image 2025-07-11 at 11.51.11 PM (1).jpeg',
+      src: 'images/img4.jpg',
       category: 'Traditional',
       title: 'Wedding Rituals'
     },
     {
-      src: '/WhatsApp Image 2025-07-11 at 11.51.12 PM.jpeg',
+      src: 'images/img5.jpg',
       category: 'Teasers',
       title: 'Wedding Teaser'
     }

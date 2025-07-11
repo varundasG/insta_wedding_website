@@ -132,7 +132,7 @@ const Contact = () => {
             {/* Studio Image */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img
-                src="/WhatsApp Image 2025-07-11 at 11.51.11 PM (1).jpeg"
+                src="images/img2.jpg"
                 alt="Wedding photography studio"
                 className="w-full h-64 object-cover"
               />
