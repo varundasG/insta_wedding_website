@@ -7,17 +7,17 @@ const Home = () => {
   
   const slides = [
     {
-      image: 'images/img2.jpg',
+      image: '/insta_wedding_website/images/img2.jpg',
       title: 'Capturing Love Stories',
       subtitle: 'Your perfect wedding moments, beautifully preserved'
     },
     {
-      image: 'images/img3.jpg',
+      image: '/insta_wedding_website/images/img3.jpg',
       title: 'Cinematic Excellence',
       subtitle: 'Professional wedding videography that tells your story'
     },
     {
-      image: 'images/img1.jpg',
+      image: '/insta_wedding_website/images/img1.jpg',
       title: 'Pre-Wedding Magic',
       subtitle: 'Romantic pre-wedding shoots in stunning locations'
     }
