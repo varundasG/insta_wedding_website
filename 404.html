@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/insta_wedding_website/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirects to root + #path to preserve navigation on refresh
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      window.location.replace(
+        "/insta_wedding_website/#" + path.replace("/insta_wedding_website/", "") + search + hash
+      );
+    </script>
   </head>
   <body>
-    <p>Redirecting to the homepage...</p>
+    <p>Redirecting...</p>
   </body>
 </html>
-
