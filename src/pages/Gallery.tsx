@@ -11,27 +11,27 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: '/insta_wedding_website/images/img1.jpg',
+      src: '/insta_wedding_website/images/img1.jpeg',
       category: 'Traditional',
       title: 'Traditional Wedding Ceremony'
     },
     {
-      src: '/insta_wedding_website/images/img2.jpg',
+      src: '/insta_wedding_website/images/img2.jpeg',
       category: 'Pre-Wedding',
       title: 'Pre-Wedding Shoot'
     },
     {
-      src: '/insta_wedding_website/images/img3.jpg',
+      src: '/insta_wedding_website/images/img3.jpeg',
       category: 'Candid Moments',
       title: 'Candid Wedding Moments'
     },
     {
-      src: '/insta_wedding_website/images/img4.jpg',
+      src: '/insta_wedding_website/images/img4.jpeg',
       category: 'Traditional',
       title: 'Wedding Rituals'
     },
     {
-      src: '/insta_wedding_website/images/img5.jpg',
+      src: '/insta_wedding_website/images/img5.jpeg',
       category: 'Teasers',
       title: 'Wedding Teaser'
     }

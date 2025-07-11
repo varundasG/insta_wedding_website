@@ -132,7 +132,7 @@ const Contact = () => {
             {/* Studio Image */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img
-                src="/insta_wedding_website/images/img2.jpg"
+                src="/insta_wedding_website/images/img2.jpeg"
                 alt="Wedding photography studio"
                 className="w-full h-64 object-cover"
               />

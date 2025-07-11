@@ -49,7 +49,7 @@ const About = () => {
             className="relative"
           >
             <img
-              src="/insta_wedding_website/images/img3.jpg"
+              src="/insta_wedding_website/images/img3.jpeg"
               alt="Wedding photography setup"
               className="w-full h-96 object-cover rounded-2xl shadow-2xl"
             />
