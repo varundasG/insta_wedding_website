@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
@@ -34,7 +34,7 @@ const Gallery = () => {
       setCurrentSlide(prev => (prev + 1) % galleryImages.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  }, [galleryImages.length]);
 
   const nextSlide = () => {
     setCurrentSlide(prev => (prev + 1) % galleryImages.length);

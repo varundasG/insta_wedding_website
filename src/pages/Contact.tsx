@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Instagram, MapPin, Clock } from 'lucide-react';
 import img2 from '../images/img2.jpeg';

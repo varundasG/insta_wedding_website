@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Camera, Video, MapPin } from 'lucide-react';
 import img3 from '../images/img3.jpeg';

@@ -11,22 +11,23 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    {
-      image: img2,
-      title: 'Capturing Love Stories',
-      subtitle: 'Your perfect wedding moments, beautifully preserved'
-    },
-    {
-      image: img3,
-      title: 'Cinematic Excellence',
-      subtitle: 'Professional wedding videography that tells your story'
-    },
-    {
-      image: img1,
-      title: 'Pre-Wedding Magic',
-      subtitle: 'Romantic pre-wedding shoots in stunning locations'
-    }
-  ];
+  {
+    image: '/images/img2.jpeg',
+    title: 'Capturing Love Stories',
+    subtitle: 'Your perfect wedding moments, beautifully preserved'
+  },
+  {
+    image: '/images/img3.jpeg',
+    title: 'Cinematic Excellence',
+    subtitle: 'Professional wedding videography that tells your story'
+  },
+  {
+    image: '/images/img1.jpeg',
+    title: 'Pre-Wedding Magic',
+    subtitle: 'Romantic pre-wedding shoots in stunning locations'
+  }
+];
+
 
   useEffect(() => {
     const timer = setInterval(() => {
