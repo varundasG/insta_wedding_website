@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // ✅ Use HashRouter
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
