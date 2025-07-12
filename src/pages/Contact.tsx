@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Instagram, MapPin, Mail, Clock } from 'lucide-react';
+import { Phone, Instagram, MapPin, Clock } from 'lucide-react';
+import img2 from '../images/img2.jpeg';
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Phone className="h-6 w-6 text-rose-500" />,
       title: 'Phone',
-      value: '902011770',
-      action: () => window.open('tel:902011770', '_self')
+      value: '9020117700',
+      action: () => window.open('tel:9020117700', '_self')
     },
     {
       icon: <Instagram className="h-6 w-6 text-rose-500" />,
@@ -69,9 +70,7 @@ const Contact = () => {
                     }`}
                     onClick={item.action || undefined}
                   >
-                    <div className="flex-shrink-0">
-                      {item.icon}
-                    </div>
+                    <div className="flex-shrink-0">{item.icon}</div>
                     <div>
                       <p className="text-sm text-gray-500">{item.title}</p>
                       <p className="text-lg font-medium text-gray-800">{item.value}</p>
@@ -86,14 +85,16 @@ const Contact = () => {
               <h3 className="text-xl font-serif text-gray-800">Quick Actions</h3>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
-                  onClick={() => window.open('tel:902011770', '_self')}
+                  onClick={() => window.open('tel:9020117700', '_self')}
                   className="flex items-center justify-center space-x-2 px-6 py-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   <span>Call Now</span>
                 </button>
                 <button
-                  onClick={() => window.open('https://www.instagram.com/insta_wedding.co/', '_blank')}
+                  onClick={() =>
+                    window.open('https://www.instagram.com/insta_wedding.co/', '_blank')
+                  }
                   className="flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
@@ -119,7 +120,9 @@ const Contact = () => {
                     <MapPin className="h-12 w-12 text-rose-500 mx-auto mb-2" />
                     <p className="text-gray-600">Palakkad, Kollengode</p>
                     <button
-                      onClick={() => window.open('https://maps.google.com/?q=Kollengode,Palakkad', '_blank')}
+                      onClick={() =>
+                        window.open('https://maps.google.com/?q=Kollengode,Palakkad', '_blank')
+                      }
                       className="mt-2 text-rose-500 hover:text-rose-600 text-sm font-medium"
                     >
                       View on Google Maps
@@ -132,7 +135,7 @@ const Contact = () => {
             {/* Studio Image */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img
-                src="/insta_wedding_website/images/img2.jpeg"
+                src={img2}
                 alt="Wedding photography studio"
                 className="w-full h-64 object-cover"
               />
@@ -164,14 +167,16 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => window.open('tel:902011770', '_self')}
+              onClick={() => window.open('tel:9020117700', '_self')}
               className="px-8 py-3 bg-rose-500 text-white rounded-full font-medium hover:bg-rose-600 transition-colors flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call 902011770</span>
+              <span>Call 9020117700</span>
             </button>
             <button
-              onClick={() => window.open('https://www.instagram.com/insta_wedding.co/', '_blank')}
+              onClick={() =>
+                window.open('https://www.instagram.com/insta_wedding.co/', '_blank')
+              }
               className="px-8 py-3 bg-white text-rose-500 border-2 border-rose-500 rounded-full font-medium hover:bg-rose-50 transition-colors flex items-center justify-center space-x-2"
             >
               <Instagram className="h-5 w-5" />

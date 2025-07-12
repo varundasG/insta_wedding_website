@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Camera, Video, MapPin } from 'lucide-react';
+import img3 from '../images/img3.jpeg';
 
 const About = () => {
   const features = [
@@ -49,7 +50,7 @@ const About = () => {
             className="relative"
           >
             <img
-              src="/insta_wedding_website/images/img3.jpeg"
+              src={img3}
               alt="Wedding photography setup"
               className="w-full h-96 object-cover rounded-2xl shadow-2xl"
             />
@@ -69,18 +70,18 @@ const About = () => {
               Passionate About Your Story
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              At Insta Wedding Co., we believe every love story deserves to be told with passion, 
-              creativity, and cinematic excellence. Based in the heart of Palakkad, Kollengode, 
+              At Insta Wedding Co., we believe every love story deserves to be told with passion,
+              creativity, and cinematic excellence. Based in the heart of Palakkad, Kollengode,
               we specialize in capturing the most precious moments of your life through our lens.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our team combines years of experience with a fresh, artistic approach to wedding 
-              photography and videography. From intimate pre-wedding shoots to grand celebration 
+              Our team combines years of experience with a fresh, artistic approach to wedding
+              photography and videography. From intimate pre-wedding shoots to grand celebration
               ceremonies, we create timeless memories that you'll treasure forever.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We also extend our creative expertise to commercial video advertisements, helping 
-              businesses tell their stories with the same attention to detail and cinematic 
+              We also extend our creative expertise to commercial video advertisements, helping
+              businesses tell their stories with the same attention to detail and cinematic
               quality that defines our wedding work.
             </p>
           </motion.div>

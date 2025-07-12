@@ -2,22 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Instagram, Phone } from 'lucide-react';
 
+// Import images locally (for Vite compatibility)
+import img1 from '../images/img1.jpeg';
+import img2 from '../images/img2.jpeg';
+import img3 from '../images/img3.jpeg';
+
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: 'images/img2.jpeg', // ✅ removed leading slash
+      image: img2,
       title: 'Capturing Love Stories',
       subtitle: 'Your perfect wedding moments, beautifully preserved'
     },
     {
-      image: 'images/img3.jpeg',
+      image: img3,
       title: 'Cinematic Excellence',
       subtitle: 'Professional wedding videography that tells your story'
     },
     {
-      image: 'images/img1.jpeg',
+      image: img1,
       title: 'Pre-Wedding Magic',
       subtitle: 'Romantic pre-wedding shoots in stunning locations'
     }
@@ -28,7 +33,7 @@ const Home = () => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -49,20 +54,21 @@ const Home = () => {
   return (
     <div className="relative h-screen overflow-hidden">
       {/* Background Slider */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         {slides.map((slide, index) => (
           <motion.div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: index === currentSlide ? 1 : 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
           >
             <img
               src={slide.image}
               alt={slide.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-30" />
           </motion.div>
         ))}
       </div>
@@ -70,18 +76,18 @@ const Home = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
 
-      {/* Content */}
+      {/* Slide Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <motion.div
           key={currentSlide}
@@ -104,7 +110,7 @@ const Home = () => {
               onClick={handleBookAppointment}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-rose-500 text-white rounded-full font-medium hover:bg-rose-600 transition-colors flex items-center justify-center space-x-2"
+              className="px-8 py-3 bg-rose-500 text-white rounded-full font-medium hover:bg-rose-600 transition flex items-center space-x-2"
             >
               <Instagram className="h-5 w-5" />
               <span>Book Appointment</span>
@@ -113,7 +119,7 @@ const Home = () => {
               onClick={handleCallNow}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-white/20 text-white rounded-full font-medium hover:bg-white/30 transition-colors backdrop-blur-sm flex items-center justify-center space-x-2"
+              className="px-8 py-3 bg-white/20 text-white rounded-full font-medium hover:bg-white/30 backdrop-blur-sm transition flex items-center space-x-2"
             >
               <Phone className="h-5 w-5" />
               <span>Call Now</span>
@@ -136,7 +142,7 @@ const Home = () => {
       </div>
 
       {/* Location Badge */}
-      <div className="absolute bottom-6 right-6 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+      <div className="absolute bottom-6 right-6 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm z-10">
         <span className="font-medium">Palakkad, Kollengode</span>
       </div>
     </div>
